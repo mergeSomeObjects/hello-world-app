@@ -51,6 +51,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'hello-world-app-to-test'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DB96B8324A5D47E989278C64196FB82F }}
+          publish-profile: $
           package: ./dist/hello-world-app
