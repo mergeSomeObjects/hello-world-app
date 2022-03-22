@@ -52,7 +52,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'hello-world-app-to-test-again'
+          app-name: 'hello-world-app-to-test'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./dist/hello-world-app
-		  
