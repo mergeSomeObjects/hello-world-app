@@ -42,6 +42,9 @@ jobs:
       - uses: azure/login@v1.4.3
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscriptions: true
+          enable-AzPSSession: false
+          environment: azurecloud
     
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
